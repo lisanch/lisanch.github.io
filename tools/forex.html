@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!--
+佛说：众生皆苦。
+须菩提，忍辱波罗密，如来说非忍辱波罗密，是名忍辱波罗密。
+过去心不可得，现在心不可得，未来心不可得
+
+开经偈：
+无上甚深微妙法，百千万劫难遭遇。
+我今见闻得受持，愿解如来真实义。
+
+-->
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>李迟的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="外汇计算     一、基础知识  标准单位为1手，即10万货币(100K)。0.1手即1万货币，0.01手即1千货币，0.001即1百货币  货币是指基本货币，如0.01手EURUSD，即表示1千欧元。0.01手USDJPY表示1千美元。如转换RMB，则按当时汇率转换。  杠杆针和保证金预付款有关(如0.01手USDJPY需要付1千美元，但加400杠杆，付2.5美元即可。以小钱撬动大资金">
+<meta name="keywords" content="一叶漂零笑,李迟的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="一叶漂零笑">
+<meta property="og:url" content="http://blog.latelee.org/tools/forex.html">
+<meta property="og:site_name" content="一叶漂零笑">
+<meta property="og:description" content="外汇计算     一、基础知识  标准单位为1手，即10万货币(100K)。0.1手即1万货币，0.01手即1千货币，0.001即1百货币  货币是指基本货币，如0.01手EURUSD，即表示1千欧元。0.01手USDJPY表示1千美元。如转换RMB，则按当时汇率转换。  杠杆针和保证金预付款有关(如0.01手USDJPY需要付1千美元，但加400杠杆，付2.5美元即可。以小钱撬动大资金">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-06-16T08:01:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一叶漂零笑">
+<meta name="twitter:description" content="外汇计算     一、基础知识  标准单位为1手，即10万货币(100K)。0.1手即1万货币，0.01手即1千货币，0.001即1百货币  货币是指基本货币，如0.01手EURUSD，即表示1千欧元。0.01手USDJPY表示1千美元。如转换RMB，则按当时汇率转换。  杠杆针和保证金预付款有关(如0.01手USDJPY需要付1千美元，但加400杠杆，付2.5美元即可。以小钱撬动大资金">
+  
+    <link rel="alternate" href="/atom.xml" title="一叶漂零笑" type="application/atom+xml">
+  
+  <link rel="icon" href="/favicon.ico">
+  
+  <!--  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css"> -->
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <!--<link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/fashion.css">
+  <link rel="stylesheet" href="/css/glyphs.css">
+
+  
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+  
+</head>
+</html>
+
+
+  <body>
+
+
+  
+
+
+<header id="allheader" class="site-header" role="banner" 
+   >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="一叶漂零笑" rel="home"> 一叶漂零笑 </a>
+            
+          </h1>
+          
+          
+            <div class="site-description"><div style="font-size:22px">李迟的个人博客</div>
+           <div>
+           以有所得之心，求无所得之果
+           </div>
+           <div align="right">迟，三尺微命，一介书生，慕荆轲嵇康, 惜韩信李香, 仰太白东坡,<br>敬文山观堂, 览钟书秋雨, 阅三毛柏杨, 乃盗号书生, 强名举子也。</div>
+            </div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories/人文社科">人文社科</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">关于</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tools">小工具</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main"><article id="page-"  class="article article-type-page" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+    <div class="article-meta">
+      
+		<span class="ico-calendar"> </span><time datetime="2020-06-16T16:01:42+08:00" itemprop="datePublished">2020-06-16</time>
+
+       
+      
+	<span id="busuanzi_container_page_pv" class="ico-eye">
+	 <span id="busuanzi_value_page_pv"></span> 次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!DOCTYPE html>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta charset="utf-8">
+<title>外汇计算</title>
+</head>
+
+<body>
+
+<h2>一、基础知识</h2>
+
+标准单位为1手，即10万货币(100K)。0.1手即1万货币，0.01手即1千货币，0.001即1百货币 <br>
+货币是指基本货币，如0.01手EURUSD，即表示1千欧元。0.01手USDJPY表示1千美元。如转换RMB，则按当时汇率转换。 <br>
+杠杆针和保证金预付款有关(如0.01手USDJPY需要付1千美元，但加400杠杆，付2.5美元即可。以小钱撬动大资金)。<br>
+每个点的值是固定的计算公式，与杠杆无关。美元在后，固定；美元在前需除以汇率<br>  
+每个货币汇率不同，以RMB表示其价格不同。<br>
+
+<h2>二、预付款计算</h2>
+不同货币，汇率不同。如USDJPY以美元结算，EURUSD以欧元结算。<br>
+手数 &nbsp;&nbsp;<input type="text" placeholder="输入交易手数" id="lot1" value="0.01"> <br>
+杠杆 &nbsp;&nbsp;<input type="text" placeholder="输入杠杆倍数" id="leverage" value="400"> <br>
+头寸 &nbsp;&nbsp;<input type="text" placeholder="输入资金总额" id="totalmoney" value="600"> <br>
+汇率 &nbsp;&nbsp;<input type="text" placeholder="输入人民币汇率" id="usdcny" value="7.061"> 该货币的CNY汇率，用于转换RMB<br>
+<br>
+<input type="button" value="计算" style="height:30px; width:150px;" onclick="calc1()">
+
+<br>
+<br>
+预付款：&nbsp;&nbsp; <span id="advance_charge"></span>RMB &nbsp;&nbsp;&nbsp;&nbsp; (<span id="advance_charge1"></span> 原货币)<br>
+预付款比： <span id="advance_charge_p"></span>%  <br>
+
+<script type="text/javascript">
+function calc1() {
+var lot = document.getElementById("lot1").value;
+var leverage = document.getElementById("leverage").value;
+var total_money = document.getElementById("totalmoney").value;
+var usdcny = document.getElementById("usdcny").value;
+
+var charge1 = document.getElementById("advance_charge1");
+var charge = document.getElementById("advance_charge");
+var charge_p = document.getElementById("advance_charge_p");
+
+var tmp = 0
+
+charge1.innerHTML = lot * 100000 / leverage
+tmp = charge1.innerHTML * usdcny
+charge.innerHTML = tmp.toFixed(2)
+tmp = (total_money - 0 ) / tmp * 100
+charge_p.innerHTML = tmp.toFixed(2) // 保留2位小数
+}
+</script>
+
+<br>
+预付款 = 手数*一标准手货币（100K）/杠杆 <br>
+预付款比例 = （账户净值 - 已预付款）/已预付款  <br>
+
+
+<h2>三、点值计算</h2>
+计算点值。根据交易手数、货币类型及汇率计算。注意，此处计算会有小误差的。<br>
+注：每个平台的“点”计量不一定相同。本例以MT4平台为主。USDJPY理论是2位，但MT4平台是3位。<br>
+
+货币 &nbsp;&nbsp;<input type="text" id="currency" value="EURUSD"> <br>
+手数 &nbsp;&nbsp;<input type="text" placeholder="输入交易手数" id="lot2" value="0.01"> <br>
+价位 &nbsp;&nbsp;<input type="text" placeholder="输入价位" id="price" value="110.000"> <br>
+汇率 &nbsp;&nbsp;<input type="text" placeholder="输入美元人民币汇率" id="usdcny2" value="7.061">  USDCNY汇率，用于转换RMB<br>
+<br>
+<input type="button" value="计算" style="height:30px; width:150px;" onclick="calc2()">
+
+<br>
+<br>
+<span id="debug"></span> <br>
+
+点值：&nbsp;&nbsp; <span id="profit"></span> RMB &nbsp;&nbsp;&nbsp;&nbsp; (<span id="profit1"></span>  USD)<br>
+
+
+<script type="text/javascript">
+function calc2() {
+var currency_org = document.getElementById("currency").value;
+var lot = document.getElementById("lot2").value;
+var price = document.getElementById("price").value;
+
+var usdcny = document.getElementById("usdcny2").value;
+
+var profit1 = document.getElementById("profit1");
+var profit = document.getElementById("profit");
+
+var debug = document.getElementById("debug");
+
+// 拆分货币品种
+var currency = ""
+var currency1 = ""
+
+// 0: 美元在后 EURUSD 1：美元在前 USDJPY
+var cur_type = 0
+var tick = 0.0001 // 基点，预设
+var tmp = 0
+
+currency = currency_org[0] + currency_org[1] + currency_org[2]
+currency1 = currency_org[3] + currency_org[4] + currency_org[5]
+
+if (currency_org != "EURUSD" && currency_org != "GBPUSD" && currency_org != "NZDUSD" && 
+    currency_org != "USDJPY" && currency_org != "USDCHF") {
+    debug.innerHTML = "不支持的货币"
+    return
+}
+
+if (currency == "USD") {
+    cur_type = 1
+}
+
+if (currency1 == "JPY") {  // 日元特殊处理
+    tick = 0.001
+}
+
+//debug.innerHTML = currency
+tmp = lot * 100000 * tick
+
+// 美元在前，需要除以货币汇率
+if (cur_type == 1) {
+    tmp = tmp / price
+}
+
+profit1.innerHTML =  tmp.toFixed(4)
+tmp = tmp * usdcny
+profit.innerHTML = tmp.toFixed(4)
+}
+</script>
+<br>
+<strong>计算参考：</strong><br>
+正向报价： <br>
+点数：
+交易手数(lot size) x 基点(tick size)  <br>
+0.01*100000 * 0.00001 = 0.01 美元  = 0.0706 RMB  <br>
+
+结论：XXXUSD的1个点为RMB0.0706 （EURUSD测试过，其它未测试）<br>
+
+<br>
+反向报价：<br>
+点值=交易手数(lot size) x 基点(tick size) / 实时汇率 (current rate)  <br>
+USDJPY: <br>
+0.01*100000 * 0.001 / 110.2000 = $ 0.00907  == 0.06405 (转换是后面的汇率，不一定符合当时的)  <br>
+
+结论：USDJPY的1个点为RMB0.064  
+
+<h2>四、盈亏计算</h2>
+MT4平台测试
+
+<!--
+货币 &nbsp;&nbsp;<input type="text" id="type" value="0.01"/> <br>
+手数 &nbsp;&nbsp;<input type="text" placeholder="输入交易手数" id="lot3" value="0.01"/> <br>
+开仓 &nbsp;&nbsp;<input type="text" placeholder="输入开仓价位" id="start1" value="400"/> <br>
+平仓 &nbsp;&nbsp;<input type="text" placeholder="输入平仓价位" id="start2" value="600" /> <br>
+点数 &nbsp;&nbsp;<input type="text" placeholder="输入点数，可为空" id="point" /> <br>
+汇率 &nbsp;&nbsp;<input type="text" placeholder="输入美元人民币汇率" id="usdcny2" value="7.061" /> <br>
+<br>
+<input type="button" value="计算" style="height:30px; width:150px;" onclick="calc2()" />
+
+<br>
+<br>
+盈亏：&nbsp;&nbsp; <span id="profit"></span>RMB &nbsp;&nbsp;&nbsp;&nbsp; (<span id="profit1"></span> USD)<br>
+
+<script type="text/javascript">
+function calc2() {
+var lot = document.getElementById("lot3").value;
+var start1 = document.getElementById("start1").value;
+var start2 = document.getElementById("start2").value;
+var point = document.getElementById("point").value;
+var usdcny = document.getElementById("usdcny2").value;
+
+var profit1 = document.getElementById("profit1");
+var profit = document.getElementById("profit");
+
+var tmp = 0
+var point1 = 0
+
+point1 = start2 - start2
+tmp = charge1.innerHTML * usdcny
+charge.innerHTML = tmp.toFixed(2)
+tmp = (total_money - 0 ) / 19.03 * 100
+charge_p.innerHTML = tmp.toFixed(2) // 保留2位小数
+}
+</script>
+<br>
+正向报价： <br>
+点数：
+交易手数(lot size) x 基点(tick size)  <br>
+0.01*100000 * 0.00001 = 0.01 美元  = 0.0706 RMB  <br>
+
+结论：XXXUSD的1个点为RMB0.0706 （EURUSD测试过，其它未测试）<br>
+
+<br>
+<br>
+反向报价：<br>
+点值=交易手数(lot size) x 基点(tick size) / 实时汇率 (current rate)  <br>
+USDJPY: <br>
+0.01*100000 * 0.001 / 110.2000 = $ 0.00907  == 0.06405 (转换是后面的汇率，不一定符合当时的)  <br>
+
+结论：USDJPY的1个点为RMB0.064  
+-->
+
+
+<!--
+货币对是由两种货币组成的外汇交易汇率，由两个 ISO 代码加一分隔符表示，例如 GBP/USD ，其中第一个代码代表“基本货币”，另一个则是“二级货币” 。<br>
+EUR/USD 欧元对美元 <br>
+GBP/USD 英镑对美元 <br>
+AUD/USD 澳元对美元 <br>
+NZD/USD 纽元对美元 <br>
+
+USD/JPY 美元对日元 <br>
+USD/CHF 美元对瑞士法郎 <br>
+USD/CAD 美元对加元 <br>
+
+正向报价：EURUSD GBPUSD <br>
+反向报价：USDJPY  <br>
+直盘 含美元的 br>
+非直盘 不含美元  AUD/JPY <br>
+
+外汇中的三大经济数据包括美国非农就业数据、美国失业率以及美联储利率决议。<br>
+
+美国非农就业数据 每个月的第一个周五颁布 <br>
+当非农业就业数字大幅增加时，反映出经济发展相当健康，理论上对汇率应该有利。因此，该数据是观察美国社会经济和金融发展状况的一项重要指标。如果该数据长期向好，美元通常会受到支撑而走强。<br>
+1、当非农数据好于预期的情况下：美元会上涨，<br>
+2、当非农数据差于预期的情况下，美元会下跌 <br>
+
+美国失业率 失业率较小的话代表美国当下有很多人都投入了劳动市场,则会产生更多的消费 <br>
+一旦失业率上升，议员将向美联储施压，要求其放松货币政策 <br>
+在正常情况下，失业率下降，这代表着整体经济的健康发展，有利于货币升值。失业率的上升表明经济发展正在放缓，衰退不利于货币升值。 <br>
+
+美联储决议 <br>
+
+美联储降息后，对黄金的的影响是先下跌后上涨。在美联储降息之后，导致美元指数大幅度上涨，而黄金遭到了抛售。不过因为美国加征关税，引起了一定的市场恐慌，导致了黄金价格大幅度上涨。由于金价上涨主要是受到了避险情绪的影响，所以虽然出现大涨，但是不能持续 <br>
+
+
+再来讲一下七大主流货币对与美元指数的基本关联及影响因素
+
+欧美：欧美可以说完全与美元指数负相关，因为欧元在世界货币体系中的分量仅次于美元因此美元指数和欧美的关系最大，欧元的变动是影响美元指数走势最大的货币
+
+镑美：英镑是影响美元走势第二大的货币，镑美走势经常相对比较独立，是所有货币对当中最与美元指数不相关的货币对，当然了，整体大的走势（指周线或者月线以上）还是与美元指数负相关。同时英国有可能是第三个仅次于美元和加元加息的国家
+
+美日：美日的走势更大部分受避险情绪影响与日本本国相关的数据或者基本面影响，相对来说受美元影响较小。避险情绪上升，黄金和日元就上涨，美日就下跌，在部分时间美国数据对美日的影响小于日本数据对其的影响，而且即使美日跟着美元指数走，波动也相对于完全相关的欧美和美瑞要小。因此重点关注美日近期走势是避险影响，还是本国数据影响，还是没有前两者的美元走势影响
+
+美加：美加的走势主要受三个因素影响，一是原油走势，加元是对原油走势最相关的货币，因为加拿大是主要的原油出口国，原油对加拿大影响较大，而且大部分时间美加是受到原油走势的影响，原油涨，加元涨，对应美加跌。二是加拿大相关经济数据及利率决议影响，这个和其他货币影响一致，比方最近一次的第二个全球加息对美加走势的影响。三是美元指数的走势，有部分时段，美加走势可能与原油无关，尤其是原油没有明显上涨或是下跌的时候，这时候可能表现出与美元指数相关
+
+澳美与纽美：澳元与纽元，这都属于商品货币，商品货币显而易见主要和商品走势相关，更确切的说主要与能源商品、原料商品有关，包括原油、铜、铝、天然气等待商品。尤其当原油已经其他能源商品表现出来明显的上涨或者下跌行情时，澳美与纽美走势和这个很相关，当这些商品没有大的明显的走势，那么也会与美元指数，也会与该国的数据影响相关
+
+美瑞：最简单的货币对，完全与美元指数正相关，极少机会会受到瑞士央行方面的影响，因为瑞士一般没有经济数据和利率政策发布，因为瑞士就不是一个靠经济的国家，是一个特殊的国家，是中立国。
+
+利润和损失(profit/loss， P/L)。 <br>
+
+2016年左右记：
+MT4，买EUR/USD 0.1手，人民币约183。
+买USD/JPY 0.01手，约17 RMB
+
+2020.3.24
+测试：
+价格：110.2000 USDJPY 0.01 17.71RMB == $2.508
+
+计算：
+0.01*100000/400 = 2.5  可理解需要预付款$2.5，以当时汇率，约17.71RMB。注：还不涉及盈亏的点数。
+
+每点计算：
+点值=交易手数(lot size) x 基点(tick size) / 现在汇率 (current rate)。
+0.01*100000 * 0.001 / 110.2000
+= $ 0.00907  == 0.06405 (转换是后面的汇率，不一定符合当时的)
+
+相当1个点RMB0.064  
+计算89个点，即5.696，当时MT4显示为7.75
+
+正向报价的：
+EURUSD
+预付款：  
+0.01手，计算：
+0.01*100000/400 = 2.5 EUR，按当时汇率，转为RMB 19.05
+
+点数：
+交易手数(lot size) x 基点(tick size)
+0.01*100000 * 0.0001 = 0.1 美元  = 0.0706 RMB
+
+一标准手，即10万货币即10万美元，每点为$10，0.1手每点为$1，0.01手每点为$0.1。这是固定的，只是换为RMB有汇率，所以觉得有变化
+
+杠杆 leverage
+-->
+
+</body>
+</html>
+      
+    </div>
+    
+    
+    
+    <hr class="entry-footer-hr">
+    <footer class="entry-meta entry-footer">
+      
+    </footer>
+    
+  </div>
+
+</article>
+
+<!-- Table of Contents -->
+</section>
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">我是谁</h3>
+    <div class="widget widget_athemes_social_icons">
+    <!-- 李迟，广西岑溪人氏。已婚。嵌入式软件工程师，摄影师，历史家，金融学者，科学哲学爱好者，社会问题研究者。<br> -->
+这是我在网上的一个精神家园。本博客记录我的工作、生活、育儿点滴。发点牢骚，写点流水账，有空回忆回忆。博客所述，不一定是现实生活发生的，勿对号入座，谢谢。<br>
+<!-- 关于技术的东西，请移步<a href="http://www.latelee.org" target="_blank">李迟的个人技术主页</a><br> -->
+        <!--
+    	<ul class="clearfix widget-social-icons">   
+    	
+   			<li><a href="" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
+
+   		
+   			<li><a href="" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
+
+   		
+   			<li><a href="" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> 
+
+   		
+   			<li><a href="" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
+
+   		
+   			<li><a href="" title="Google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> 
+
+   		
+   			<li><a href="" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> 
+
+   		
+   		</ul>
+        -->
+
+   		<!--
+   		<ul class="clearfix widget-social-icons">   		
+   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
+		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
+			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
+			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
+			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
+			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
+		</ul> -->
+
+    </div>
+  </div>
+
+
+  
+    <div style="margin: 20px 0;">
+	<div id="search-form-wrap">
+
+    <form class="search-form">
+        <label style="width: 72%;">
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" class="search-field" style="height: 36px; width: 100%;" placeholder=" 搜索…" value="" name="s" title="Search for:">
+        </label>
+        <input type="submit" class="search-form-submit" value="搜索">
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+</div>
+  
+    
+  <div class="widget_athemes_tabs">
+    <ul id="widget-tab" class="clearfix widget-tab-nav">
+      <li class="active"><a>最新文章</a></li>
+    </ul>
+    <div class="widget">
+      <ul>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/life/李大锤成长记：回家接大锤上南宁.html">李大锤成长记：回家接大锤上南宁</a></h6>
+              <span>十一月 23, 2019</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/life/一些往事的片段.html">一些往事的片段</a></h6>
+              <span>十一月 14, 2019</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/life/钢笔使用感觉.html">钢笔使用感觉</a></h6>
+              <span>十一月 8, 2019</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/work/新公司上班第一天.html">新公司上班第一天</a></h6>
+              <span>十一月 1, 2019</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/child/李大锤成长记：大锤回老家.html">李大锤成长记：大锤回老家</a></h6>
+              <span>十月 23, 2019</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/life/与老班长聚会.html">与老班长聚会</a></h6>
+              <span>十月 23, 2019</span>
+            </div>
+
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/人文社科/">人文社科</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/child/">养娃记</a><span class="category-list-count">26</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/大学印记/">大学印记</a><span class="category-list-count">21</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/work/">工作</a><span class="category-list-count">130</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/我在外包的日子/">我在外包的日子</a><span class="category-list-count">37</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日语学习/">日语学习</a><span class="category-list-count">24</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/李迟当官记/">李迟当官记</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/otherlife/">生活其它</a><span class="category-list-count">22</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活掠影/">生活掠影</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">生活流水账</a><span class="category-list-count">76</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/逢年过节/">逢年过节</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/U盾/" style="font-size: 10px;">U盾</a> <a href="/tags/个人总结/" style="font-size: 13.85px;">个人总结</a> <a href="/tags/个人语录/" style="font-size: 10px;">个人语录</a> <a href="/tags/中秋/" style="font-size: 10.77px;">中秋</a> <a href="/tags/五一/" style="font-size: 10px;">五一</a> <a href="/tags/五行/" style="font-size: 10px;">五行</a> <a href="/tags/休闲/" style="font-size: 10px;">休闲</a> <a href="/tags/例会/" style="font-size: 16.92px;">例会</a> <a href="/tags/信用卡/" style="font-size: 11.54px;">信用卡</a> <a href="/tags/借书/" style="font-size: 10px;">借书</a> <a href="/tags/八字/" style="font-size: 10px;">八字</a> <a href="/tags/公交卡/" style="font-size: 10.77px;">公交卡</a> <a href="/tags/关键路径/" style="font-size: 10px;">关键路径</a> <a href="/tags/养娃记/" style="font-size: 10px;">养娃记</a> <a href="/tags/出差/" style="font-size: 12.31px;">出差</a> <a href="/tags/出游/" style="font-size: 10px;">出游</a> <a href="/tags/加班/" style="font-size: 10px;">加班</a> <a href="/tags/加薪/" style="font-size: 10.77px;">加薪</a> <a href="/tags/北京/" style="font-size: 10px;">北京</a> <a href="/tags/单反/" style="font-size: 10px;">单反</a> <a href="/tags/吃喝玩乐/" style="font-size: 16.15px;">吃喝玩乐</a> <a href="/tags/周末/" style="font-size: 10px;">周末</a> <a href="/tags/回家/" style="font-size: 10px;">回家</a> <a href="/tags/国庆/" style="font-size: 10px;">国庆</a> <a href="/tags/培训/" style="font-size: 10px;">培训</a> <a href="/tags/外包/" style="font-size: 20px;">外包</a> <a href="/tags/大学印记/" style="font-size: 18.46px;">大学印记</a> <a href="/tags/学佛/" style="font-size: 14.62px;">学佛</a> <a href="/tags/岗位/" style="font-size: 10px;">岗位</a> <a href="/tags/工作/" style="font-size: 19.23px;">工作</a> <a href="/tags/工行/" style="font-size: 10px;">工行</a> <a href="/tags/开户/" style="font-size: 10px;">开户</a> <a href="/tags/感悟/" style="font-size: 10px;">感悟</a> <a href="/tags/手表/" style="font-size: 13.08px;">手表</a> <a href="/tags/护照/" style="font-size: 10px;">护照</a> <a href="/tags/挂失/" style="font-size: 10px;">挂失</a> <a href="/tags/搬家/" style="font-size: 10px;">搬家</a> <a href="/tags/数码/" style="font-size: 10.77px;">数码</a> <a href="/tags/新闻稿/" style="font-size: 10px;">新闻稿</a> <a href="/tags/旅游/" style="font-size: 12.31px;">旅游</a> <a href="/tags/日本/" style="font-size: 10.77px;">日本</a> <a href="/tags/李迟当官/" style="font-size: 15.38px;">李迟当官</a> <a href="/tags/民族文物苑/" style="font-size: 10px;">民族文物苑</a> <a href="/tags/海淘/" style="font-size: 11.54px;">海淘</a> <a href="/tags/清明/" style="font-size: 11.54px;">清明</a> <a href="/tags/游记/" style="font-size: 10px;">游记</a> <a href="/tags/炒股/" style="font-size: 10px;">炒股</a> <a href="/tags/生日/" style="font-size: 10px;">生日</a> <a href="/tags/生活/" style="font-size: 10.77px;">生活</a> <a href="/tags/离职/" style="font-size: 10px;">离职</a> <a href="/tags/结婚/" style="font-size: 10px;">结婚</a> <a href="/tags/绩效/" style="font-size: 10px;">绩效</a> <a href="/tags/考核/" style="font-size: 10px;">考核</a> <a href="/tags/聚会/" style="font-size: 13.08px;">聚会</a> <a href="/tags/证券账户/" style="font-size: 10px;">证券账户</a> <a href="/tags/读书笔记/" style="font-size: 13.85px;">读书笔记</a> <a href="/tags/购物-android手机/" style="font-size: 10px;">购物 android手机</a> <a href="/tags/起名/" style="font-size: 10px;">起名</a> <a href="/tags/逢年过节/" style="font-size: 15.38px;">逢年过节</a> <a href="/tags/部门/" style="font-size: 11.54px;">部门</a> <a href="/tags/面试/" style="font-size: 10px;">面试</a> <a href="/tags/项目/" style="font-size: 17.69px;">项目</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">32</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">18</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">16</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">12</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">七月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">一月 2015</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">十月 2014</a><span class="archive-list-count">11</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">九月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">六月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">三月 2014</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">十二月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">八月 2013</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/01/">一月 2012</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/10/">十月 2011</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/07/">七月 2011</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/05/">五月 2011</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/04/">四月 2011</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2011/03/">三月 2011</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/06/">六月 2010</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/04/">四月 2010</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/03/">三月 2010</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2010/01/">一月 2010</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/10/">十月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/08/">八月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/06/">六月 2009</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/04/">四月 2009</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/03/">三月 2009</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2009/01/">一月 2009</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/11/">十一月 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/10/">十月 2008</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/05/">五月 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/04/">四月 2008</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2008/03/">三月 2008</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+</aside>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories/人文社科" class="mobile-nav-link">Readings</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+    <a href="/tools" class="mobile-nav-link">Tools</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2020 <a href="https://blog.latelee.org/"  target="_blank">一叶漂零笑</a> 版权所有.<br>
+          本博客由hexo强力驱动，主题修改自<a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a><br>
+          
+          <!-- 这里显式显示站长统计链接和文字，但实际进行统计的代码是在另一个文件，只是那个脚本的代码不会显示在页面上  -->
+          &nbsp;&nbsp <a href="http://www.cnzz.com/stat/website.php?web_id=1253384121" target="_blank">站长统计</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+    
+</script>
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1253384121&web_id=1253384121" language="JavaScript"></script>
+  </div>
+
+
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
